@@ -3,7 +3,7 @@ pipeline{
         stages{
             stage('Make Directory'){
                 steps{
-                    sh "mkdir ~/jenkins-freestyle-project"
+                    sh "mkdir -p ~/jenkins-freestyle-project"
                 }
             }
             stage('Make Files'){
