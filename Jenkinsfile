@@ -3,12 +3,12 @@ pipeline{
         stages{
             stage('Make Directory'){
                 steps{
-                    sh "mkdir ~/jenkins-tutorial-test"
+                    sh "mkdir ~/jenkins-freestyle-project"
                 }
             }
             stage('Make Files'){
                 steps{
-                    sh "touch ~/jenkins-tutorial-test/file1 ~/jenkins-tutorial-test/file2"
+                    sh "touch ~/jenkins-freestyle-project/file1 ~/jenkins-freestyle-project/file2"
                 }
             }
         }
